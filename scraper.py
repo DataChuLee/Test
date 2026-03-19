@@ -213,5 +213,5 @@ if __name__ == "__main__":
 
     addr = sys.argv[1] if len(sys.argv) > 1 else "강남구 테헤란로 152"
     print(f"검색 중: {addr}")
-    result = get_land_use_info(addr, headless=True)
+    result = get_land_use_info(addr, headless=False)
     print(json.dumps(result, ensure_ascii=False, indent=2))
